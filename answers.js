@@ -102,3 +102,13 @@ console.log(doingMath("mult",2,4));
 console.log(doingMath("div",10,5));
 console.log(doingMath("string",9,12));
 
+// the function below takes the string entered in the string paramter 
+// and uses the .repeat method and prints it out as many times as is indicated
+// in the "number" parametr
+
+function multiplyString(string,number) {
+    return (string + " ").repeat(number)
+};
+
+console.log(multiplyString("jerk store", 4));
+console.log(multiplyString("",5));
