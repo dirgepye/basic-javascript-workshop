@@ -42,8 +42,23 @@ console.log(numberedString("",6));
 
 function numberedStringUser (string,number) {
     return string[number -1]
-}
+};
 
 console.log(numberedStringUser("jerk store",2));
 console.log(numberedStringUser("montreal",4));
 console.log(numberedStringUser("",6));
+
+
+// this function takes two numbers and adds them. if you try to pas
+// something other than a number it will not add properly. a string simply
+// attaches itself to the number (so ("string",10) literally returns string10.
+// if you add a character that isn't a number you get a reference error telling 
+// you that the character in question has not yet been defined.
+
+function addNumbers(num1,num2) {
+    return num1 + num2
+}
+
+console.log(addNumbers(1,8));
+
+console.log(addNumbers("string",10));
