@@ -74,3 +74,31 @@ function multiplyNumbers(num1,num2) {
 console.log(multiplyNumbers(6,6));
 console.log(multiplyNumbers("string",5));
 console.log(multiplyNumbers(false,5));
+
+// the following function take a string and two numbers. depending on what
+// the string entered is, a different equation is used
+
+function doingMath(operator,num1,num2) {
+    if (operator === "add") {
+        return num1 + num2;
+    }
+    else if (operator === "subtract") {
+        return num1 - num2;
+    }
+    else if (operator === "mult") {
+        return num1 * num2;
+    }
+    else if (operator === "div") {
+        return num1 / num2;
+    }
+    else {
+        return 0;
+    }
+};
+
+console.log(doingMath("add",8,10));
+console.log(doingMath("subtract",10,5));
+console.log(doingMath("mult",2,4));
+console.log(doingMath("div",10,5));
+console.log(doingMath("string",9,12));
+
