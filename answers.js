@@ -112,3 +112,17 @@ function multiplyString(string,number) {
 
 console.log(multiplyString("jerk store", 4));
 console.log(multiplyString("",5));
+
+// It seems like you cannot simply reverse data types so you have to 
+// use the split method to take the input and make it into an array. 
+// from there the reverse method reverses everything and then the join
+// method puts it all back together.
+
+
+function reverseInput(input) {
+    return input.split('').reverse().join('');
+};
+
+console.log(reverseInput("jerk store"));
+console.log(reverseInput(" "));
+console.log(reverseInput("racecar"));
