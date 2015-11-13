@@ -62,3 +62,15 @@ function addNumbers(num1,num2) {
 console.log(addNumbers(1,8));
 
 console.log(addNumbers("string",10));
+
+// this function takes two numbers and multiplies them. if you multiply a string
+// it returns NaN (not a number?) if you insert a boolean, it seems like they
+// have a value of 1 or 0 (true or false) and it makes the multiplication accordingly
+
+function multiplyNumbers(num1,num2) {
+    return num1 * num2
+}
+
+console.log(multiplyNumbers(6,6));
+console.log(multiplyNumbers("string",5));
+console.log(multiplyNumbers(false,5));
