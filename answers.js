@@ -126,3 +126,34 @@ function reverseInput(input) {
 console.log(reverseInput("jerk store"));
 console.log(reverseInput(" "));
 console.log(reverseInput("racecar"));
+
+
+//
+
+
+
+var factorial2 = function(n) {
+    if (n === 0) {
+        return 1
+    } else {
+        return n * factorial2(n -1);
+    }
+}
+
+console.log(factorial2(6));
+
+
+
+
+var result = 1
+
+function factorial(num) {
+    while (num > 0)
+    {result = result * num  
+    num = num -1}
+
+return result
+}
+
+
+console.log(factorial(6));
