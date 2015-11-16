@@ -128,7 +128,7 @@ console.log(reverseInput(" "));
 console.log(reverseInput("racecar"));
 
 
-//
+// below are two examples of how you could get a factorial number
 
 
 
@@ -157,3 +157,32 @@ return result
 
 
 console.log(factorial(6));
+
+// the function below takea phrase and breaks it down into multiple parts
+// seperated by the spaces in the var "string". it also creats a variable
+// called longest which has a value of zero, and a variable called word
+// which has no value. it runs a for loop to find and list each part of
+// the string by it's length. after that it checks the length of the words
+// included into the text using the "longest" variable which is programmed
+// to compare itself to the length of every word in the string. if the value 
+// of the word is greater than what is currently in the "longest" variable
+// it will adopt the value of the longer word. it does this until it has 
+// it has gone through all teh words and then returns whatever word was
+// the longest
+
+function longestWord(phrase) {
+    var string = phrase.split(" ");
+    var longest = 0;
+    var word = null;
+    for (var i = 0; i < string.length; i++) {
+        if (longest < string[i].length) {
+            longest = string[i].length;
+            word = string[i];
+        }
+    }
+    return word;
+}
+
+console.log(longestWord("leopard skin pill box hat"));
+/* console.log(longestWord(96)); */
+console.log(longestWord("meow woof meow woof"));
