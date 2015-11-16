@@ -189,6 +189,14 @@ console.log(longestWord("meow woof meow woof"));
 
 //
 
+function firstOfString(phrase) {
+    
+    return phrase.toLowerCase;
+};
+
+console.log(firstOfString("ONE TOO MANY MORNINGS"));
+
+
 // the function below takes an array of numbers and 
 // identifies the largest number using a similar strategy
 // as the function written earlier to find the longest word
@@ -209,4 +217,18 @@ function biggestNumber(numbers){
 }
 console.log(biggestNumber(numbers));
 
-//
+// returns the sum of numbers in array
+
+var numbers = [1,2,3,4,5]
+
+function arraySum(array) {
+    var sum = 0;
+    array.forEach(function(number) {
+        sum = sum + number;
+    })
+    return sum
+}
+
+console.log(arraySum(numbers));
+
+// 
