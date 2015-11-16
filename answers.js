@@ -180,9 +180,33 @@ function longestWord(phrase) {
             word = string[i];
         }
     }
-    return word;
+    return word
 }
 
 console.log(longestWord("leopard skin pill box hat"));
 /* console.log(longestWord(96)); */
 console.log(longestWord("meow woof meow woof"));
+
+//
+
+// the function below takes an array of numbers and 
+// identifies the largest number using a similar strategy
+// as the function written earlier to find the longest word
+// in a given phrase
+
+var numbers = [ 2, 888, 12, 3041 ]; 
+
+function biggestNumber(numbers){
+    var biggest = 0;
+    var finalNumber = null;
+  for(var i=0;i<numbers.length;i++){
+    if (biggest < numbers[i]) {
+        biggest = numbers[i];
+        finalNumber = numbers[i];
+    }
+  }
+  return finalNumber
+}
+console.log(biggestNumber(numbers));
+
+//
